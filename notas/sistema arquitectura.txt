@@ -1,0 +1,36 @@
+Base de datos
+    # Usuarios
+        - id
+        - nombre
+        - nombre_de_usuario
+        - rol
+        - password
+        - creacion
+    # roles
+        - id
+        - nombre
+        * administrador = Todo
+        * Trabajador = crear
+    # cuerpo de emails
+        - id
+        - user_id
+        - nombre
+        - descripcion
+    # emails
+        - id
+        - user_id
+        - Nombre Empresa ( Opcional )
+        - url ( opcional )
+        - email ( opcional en caso de que halla otra forma de contacto )
+        - whatsapp ( opcional ) string ( Link )
+        - Instagram ( opcional ) string ( Link )
+        - Facebook( opcional ) string ( Link )
+        - descripcion ( opcional )
+
+DESARROLLO DE ENVIO DE EMAILS
+    - nombre del remitente
+    - select de cuerpos de mensaje
+    - editor de cuerpo de mensaje
+
+    - Checboks de emails que se desean enviar
+
