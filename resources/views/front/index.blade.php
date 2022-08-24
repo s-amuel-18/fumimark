@@ -538,7 +538,7 @@
 
 @push('js')
     <script>
-        $("#modal_ads").modal("show");
+        // $("#modal_ads").modal("show");
         const appData = @json($data['js']);
         const services = document.getElementById("services");
         const meters = document.getElementById("meters");
