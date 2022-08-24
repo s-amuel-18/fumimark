@@ -34,8 +34,5 @@ $(document).ready(async function () {
         submitter.disabled = false;
 
         budgetSweetAlert(data.total_pay_format, data.services);
-
-        // e.target.reset();
-        // $(services).val(null).trigger("change");
     });
 });

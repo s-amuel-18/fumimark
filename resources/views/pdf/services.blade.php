@@ -20,7 +20,7 @@
 
 
     body {
-        margin-top: 4cm;
+        margin-top: 5cm;
         margin-bottom: 5cm;
         font-family: 'Poppins';
     }
@@ -70,7 +70,7 @@
 
     .h-1 {
         font-weight: 900;
-        color: #4f1593;
+        color: rgb(251, 68, 60);
         text-align: center;
         line-height: 1;
     }
@@ -81,7 +81,7 @@
 
     .h-3 {
         font-weight: 200;
-        color: #4f1593;
+        color: rgb(251, 68, 60);
         text-align: center;
         line-height: 1;
         margin-bottom: 1cm;
@@ -89,7 +89,7 @@
 
     .h-5 {
         font-weight: 900;
-        color: #4f1593;
+        color: rgb(251, 68, 60);
     }
 
     .td-1 {
@@ -161,7 +161,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 8cm;
+        height: 5cm;
     }
 
     .sq-80 {
@@ -179,7 +179,7 @@
     }
 
     .logo-fluxel-f {
-        margin-top: 4.5cm;
+        margin-top: 7cm;
         margin-left: 15cm;
         margin-right: 3cm;
         padding: 2.5rem;
@@ -206,14 +206,15 @@
 </style>
 
 <body>
-    <header class="bg-img" style="background-image: url(https://www.fluxelcode.com/images/pdf_assets/header-4.png);">
-        <div class="logo-fluxel-h"><img class="logo-fluxel"
-                src="https://www.fluxelcode.com/images/pdf_assets/fluxel_code_xl.png" alt=""></div>
+    <header class="bg-img" style="background-image: url({{ public_path('images\pdf_assets\header.png') }});">
+        {{-- <div class="logo-fluxel-h"><img class="logo-fluxel" src="{{ public_path('front\img\fumimark_logo.png') }}"
+                alt=""></div> --}}
     </header>
-    <footer class="bg-img" style="background-image: url(https://www.fluxelcode.com/images/pdf_assets/footer-4.png);">
+    <footer class="bg-img" style="background-image: url({{ public_path('images\pdf_assets\footer.png') }});">
 
-        <div class="logo-fluxel-f"><img class="logo-fluxel"
-                src="https://www.fluxelcode.com/images/pdf_assets/fluxel_code_xl.png" alt=""></div>
+        <div class="logo-fluxel-f">
+            {{-- <img class="logo-fluxel" src="{{ public_path('front\img\fumimark_logo.png') }}" alt=""> --}}
+        </div>
     </footer>
 
 
@@ -222,10 +223,10 @@
             {{-- <br><br><br><br><br><br><br><br><br><br> --}}
             <div class="">
                 <h1 class="h-1">
-                    SERVICIOS
+                    Servicios
                 </h1>
                 <h3 class="h-3">
-                    Lista de precios de servicios FLUXEL-CODE
+                    Lista de servicios ofrecidos por Fumimark
                 </h3>
             </div>
             <div class="">
@@ -233,12 +234,14 @@
 
                     <thead>
                         <tr>
-                            <th>Nombre </th>
+                            <th>Servicio </th>
                             <th>Precio</th>
+                            <th>Por Metro</th>
                         </tr>
                     </thead>
 
                     <tbody>
+
                         @foreach ($data['services'] as $service)
                             <tr>
                                 <td>
@@ -247,15 +250,29 @@
 
                                 <td>
                                     {{ $service->price }}$
-                                </td>
 
+                                </td>
+                                <td>
+
+                                    {{ $service->meter }}
+                                </td>
                             <tr>
                         @endforeach
+
+
                     </tbody>
+                    {{-- <tfoot class="">
+                        <td></td>
+                        <td></td>
+                        <td><Strong>Total:</Strong></td>
+                        <td><Strong>{{ $data['total_pay_format'] }}</Strong></td>
+                    </tfoot> --}}
                 </table>
             </div>
         </section>
         {{-- <div class="page-break"></div> --}}
+
+
     </main>
 
 

@@ -35,12 +35,42 @@
     <link rel="icon" href="{{ asset('images/logo/fumimark_code.png') }}" type="image/x-icon">
     <title>Fumimark - Control de plagas</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/jquery.bxslider.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/select2/css/select2.css') }}">
     <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
     <!--~~~~~~~~~~~~~~ animate ~~~~~~~~~~~~~~~-->
     <link rel="stylesheet" href="{{ asset('front/css/animate.css') }}">
+
+    <style>
+        .select2>.selection {
+            width: 100%;
+        }
+
+        .select2-container--default .select2-results__option--highlighted[aria-selected] {
+            background-color: #fb443c;
+        }
+
+        .btn-danger {
+            background-color: #fb443c;
+        }
+
+        .btn-outline-danger {
+            border-color: #fb443c;
+            color: #fb443c;
+        }
+
+        .btn-outline-danger:hover {
+            background-color: #fb443c;
+        }
+
+        .img-cover {
+            object-fit: cover
+        }
+    </style>
+    @stack('css')
 </head>
 
 <body>
@@ -48,7 +78,9 @@
     @yield('content')
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> --}}
+    <script src="{{ asset('vendor/select2/js/select2.full.min.js') }}"></script>
     <script src="{{ asset('front/js/bootstrap.js') }}"></script>
     <script src="{{ asset('front/js/jquery.bxslider.min.js') }}"></script>
     <!--~~~~~~~~~~~~~~~~ wow ~~~~~~~~~~~~~~~~~-->
@@ -59,6 +91,13 @@
                 minSlides: 1,
                 maxSlides: 1,
                 captions: false
+            });
+            $(".select2").select2({
+                width: '100%',
+                containerCss: {
+                    "display": "block"
+                },
+                dropdownAutoWidth: true
             });
         });
         var a = 0;
@@ -110,6 +149,8 @@
         });
         wow.init();
     </script>
+
+    @stack('js')
 
 </body>
 

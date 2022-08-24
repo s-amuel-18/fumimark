@@ -34,8 +34,8 @@
                         <li class="nav-item"> <a class="nav-link" href="{{ route('login') }} ">Inicio de sesión</a> </li>
                     </ul>
                     <form class="form-inline ml-3 my-lg-0">
-                        <button class="btn btn-danger font-weight-bold dd2" href="#contact">PIDE TU
-                            CITA!</button>
+                        <a href="#quoter" class="btn btn-danger font-weight-bold dd2" href="#contact">Solicita una
+                            cotizacion</a>
                     </form>
                 </div>
             </div>
@@ -51,8 +51,8 @@
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active slide-60vh"> <img src="{{ asset('front/img/slide_1.jpg') }}"
-                        class="d-block  h-100 w-100" alt="...">
+                <div class="carousel-item active slide-60vh">
+                    <img src="{{ asset('front/img/slide_1.jpg') }}" class="d-block img-cover  h-100 w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5><span>Somos</span> Expertos <span>en control de plagas</span></h5>
                         <p>Con años de experiencia <br>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="carousel-item slide-60vh"> <img src="{{ asset('front/img/slide-2.jpg') }}"
-                        class="d-block  w-100 slide-60vh" alt="...">
+                        class="d-block img-cover  w-100 slide-60vh" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Maneras seguras<span> de controlar</span></h5>
                         <p>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="carousel-item slide-60vh"> <img src="{{ asset('front/img/slide-3.jpg') }}"
-                        class="d-block  w-100 slide-60vh" alt="...">
+                        class="d-block img-cover  w-100 slide-60vh" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5><span>¿Preocupado</span> por las plagas?</h5>
                         <p>¡No te preocupes, te ayudaremos! <br>
@@ -114,9 +114,10 @@
                         </p>
                         <p>Ayudamos a desarrollar su negocio. Brindamos el mejor servicio que viene con los mejores
                             resultados.</p>
-                        <div class="progress-item pt-2"> <span class="mb-3 font-weight-bold">Trabajo profesional </span>
-                            <span class="progress-count font-weight-bolder mb-3 float-right">100%</span>
-                            <div class="progress">
+                        <div class="progress-item pt-2">
+                            <span class="mb-2 font-weight-bold">Trabajo profesional </span>
+                            <span class="progress-count font-weight-bolder mb-2 float-right">100%</span>
+                            <div class="progress " style="height: 7px">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                                     role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                                     style="width:100%"></div>
@@ -280,11 +281,41 @@
                     </div>
                 </div>
             </div>
-            <div class="row pb-4 pt-3 justify-content-center wow animate__fadeInUp" data-wow-duration="2s">
-                <div class="col-md-4"> <a href="#contact"
-                        class="btn d-block btn-outline-dark text-uppercase font-weight-bold dd2">Contactanos&nbsp; <i
-                            class="lni-arrow-right"></i></a> </div>
+            <div class="row pb-4 pt-3  wow animate__fadeInUp" data-wow-duration="2s">
+                <div class="offset-md-1 col-md-5 p-2">
+                    <a target="_blanck" href="{{ route('pdf.services') }}"
+                        class="btn d-block btn-outline-dark text-uppercase font-weight-bold dd2">Descargar lista de
+                        servicios
+                        <i class="fa fa-file-pdf"></i>
+                    </a>
+                </div>
+                <div class="col-md-5 p-2">
+                    <a target="_blanck" href="{{ route('pdf.cartaPresentacion') }}"
+                        class="btn d-block btn-outline-danger text-uppercase font-weight-bold dd2">carta de
+                        presentación
+                        <i class="fa fa-file-pdf"></i>
+                    </a>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!--------------service badget------------------>
+    <div class="bg-wrapper-2 py-5" id="quoter">
+        <div class="container ">
+            <div class="row pt-4 justify-content-center">
+                <div class="col-7 text-center">
+                    <div class="section-title section-title-2 wow animate__fadeInUp" data-wow-duration="2s">
+                        <h2>Cotización en tiempo real</h2>
+                        <h3>¡Solicita una cotizacion del servicio!</h3>
+                        <span class="divider divider-line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="wow animate__fadeInUp" data-wow-duration="2s">
+                @include('front.components.form_quoter')
+            </div>
+
         </div>
     </div>
 
@@ -295,21 +326,22 @@
             <div class="col-12">
                 <div class="slider">
                     <div class="row">
-                        <div class="col-9 text-center">
+                        <div class="col-12 text-center">
                             <div class="ml-5 mr-5 rr6">
                                 <p class="lead text-center rr4">Gracias por el maravilloso servicio que su empresa ha
                                     brindado a mi empresa. Específicamente, en mi oficina había serios problemas de insectos
                                     y su negocio respondió de inmediato y de manera muy profesional. </p>
                                 <div class="m-auto" style="width:45px; padding-top:20px; border-bottom:5px solid #fb443c">
                                 </div>
-                                <h6 class="mt-5 font-weight-bold small">ALEXIS CHAPMAN, DIRECTOR - EMPRESA 1</h6>
+                                <h6 class="mt-5 font-weight-bold small">ALEXIS CHAPMAN, DIRECTOR - Venta de maní San Jorge
+                                    ca.</h6>
                             </div>
                         </div>
-                        <div class="col-3"><img src="{{ asset('front/img/testi-1.jpg') }}"
-                                class="img-fluid rounded-circle" title="Kevin Griswold -  Stylist"></div>
+                        {{-- <div class="col-3"><img src="{{ asset('front/img/testi-1.jpg') }}"
+                                class="img-fluid rounded-circle" title="Kevin Griswold -  Stylist"></div> --}}
                     </div>
                     <div class="row">
-                        <div class="col-9 text-center">
+                        <div class="col-12 text-center">
                             <div class="ml-5 mr-5 rr6">
                                 <p class="lead text-center rr4">Solo quería agradecer de nuevo a Fumimark por un trabajo
                                     bien hecho.
@@ -321,14 +353,15 @@
                                 </p>
                                 <div class="m-auto" style="width:45px; padding-top:20px; border-bottom:5px solid #fb443c">
                                 </div>
-                                <h6 class="font-weight-bold small mt-5">ALEXIS CHAPMAN, DIRECTOR - EMPRESA 2</h6>
+                                <h6 class="font-weight-bold small mt-5">ALEXIS CHAPMAN, DIRECTOR - Universidad
+                                    Metropolitana</h6>
                             </div>
                         </div>
-                        <div class="col-3"><img src="{{ asset('front/img/testi-2.jpg') }}"
-                                class="img-fluid rounded-circle" title="Kevin Griswold -  Stylist"></div>
+                        {{-- <div class="col-3"><img src="{{ asset('front/img/testi-2.jpg') }}"
+                                class="img-fluid rounded-circle" title="Kevin Griswold -  Stylist"></div> --}}
                     </div>
                     <div class="row">
-                        <div class="col-9 text-center">
+                        <div class="col-12 text-center">
                             <div class="ml-5 mr-5 rr6">
                                 <p class="lead text-center rr4">Recomiendo encarecidamente esta empresa. El servicio fue
                                     minucioso, agradable y puntual. El personal de la oficina fue servicial y fácil de
@@ -336,11 +369,12 @@
                                     surgiera la necesidad.</p>
                                 <div class="m-auto" style="width:45px; padding-top:20px; border-bottom:5px solid #fb443c">
                                 </div>
-                                <h6 class="font-weight-bold small mt-5">ALEXIS CHAPMAN, DIRECTOR - EMPRESA 3</h6>
+                                <h6 class="font-weight-bold small mt-5">ALEXIS CHAPMAN, DIRECTOR - Grupo Hinterlaces, ca
+                                </h6>
                             </div>
                         </div>
-                        <div class="col-3"><img src="{{ asset('front/img/testi-2.jpg') }}"
-                                class="img-fluid rounded-circle" title="Kevin Griswold -  Stylist"></div>
+                        {{-- <div class="col-3"><img src="{{ asset('front/img/testi-2.jpg') }}"
+                                class="img-fluid rounded-circle" title="Kevin Griswold -  Stylist"></div> --}}
                     </div>
                 </div>
             </div>
@@ -358,7 +392,7 @@
                 </div>
                 <div class="col-6 col-lg-4 pb-3 text-center">
                     <div class="counter-value" data-count="10">110</div>
-                    <h5 class="font-weight-normal text-black-50">Cliente feliz</h5>
+                    <h5 class="font-weight-normal text-black-50">Clientes felices</h5>
                 </div>
                 <div class="col-6  col-lg-4 pb-3 text-center">
                     <div class="counter-value" data-count="1569"></div>
@@ -495,4 +529,33 @@
     </div>
 
     <!---------------Copyright section ends here --------------------->
+
+    <!---------------modal quoter --------------------->
+    @include('front.components.modal_quoter')
+    @include('front.components.btn-fixed')
+    @include('front.components.modal_ads')
 @endsection
+
+@push('js')
+    <script>
+        $("#modal_ads").modal("show");
+        const appData = @json($data['js']);
+        const services = document.getElementById("services");
+        const meters = document.getElementById("meters");
+        const total_pay = document.getElementById("total_pay");
+        const httpGetQuoter = appData["httpGetQuoter"];
+        const http_send_mail = appData["http_send_mail"];
+        const budget_email = document.getElementById("budget_email");
+        const budget_name = document.getElementById("budget_name");
+    </script>
+
+    <script src="{{ asset('vendor/jquery-validation/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('vendor/jquery-validation/additional-methods.min.js') }}"></script>
+    <script src="{{ asset('vendor/jquery-validation/localization/messages_es.min.js') }}"></script>
+    <script src="{{ asset('js/Plugins/axios.min.js') }}"></script>
+    <script src="{{ asset('js/Plugins/clipboard.min.js') }}"></script>
+    <script src="{{ asset('js/services/functions.js') }}"></script>
+    <script src="{{ asset('front/js/services_quoter.js') }}"></script>
+    <script src="{{ asset('js/services/services.js') }}"></script>
+    <script src="{{ asset('js/services/validate.js') }}"></script>
+@endpush

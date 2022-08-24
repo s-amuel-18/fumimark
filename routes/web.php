@@ -96,7 +96,7 @@ Route::resource("recomendaciones", RecomendacionMejoraController::class)->middle
 
 // servicios
 Route::resource("servicios", ServiceController::class)->except("show")->middleware("auth")->names("service");
-Route::get("servicios/cotizacion", [ServiceController::class, "quoter"])->middleware("auth")->name("service.quoter");
+Route::get("servicios/cotizacion", [ServiceController::class, "quoter"])->name("service.quoter");
 
 
 // preview email fluxel

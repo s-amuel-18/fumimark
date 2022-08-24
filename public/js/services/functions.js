@@ -62,7 +62,7 @@ function send_mail(data) {
     });
 }
 
-function budgetSweetAlert(total, data, url_form = null) {
+function templateBudget(data, total) {
     let tableTemplate = ``;
     let formItemsTemplate = ``;
 
@@ -106,25 +106,28 @@ function budgetSweetAlert(total, data, url_form = null) {
       
            <div class="input-group ">
                <textarea class=" form-control " name="" rows="1"  readonly  id="budget_text" style="resize: none;">Precio total del servicio ${total}$</textarea>
-               <div class="input-group-append ">
-                   <button class="btn btn-sm btn-info " data-clipboard-target="#budget_text" id="budget_copy">
-                       <i class="fa fa-clipboard mr-1" aria-hidden="true"> <span class="d-none d-md-inline-block ">Copiar presupuesto</span></i>
-                      
+               <div class="input-group-append d-flex">
+                   <button class="btn btn-sm btn-info ml-2" data-clipboard-target="#budget_text" id="budget_copy">
+                       <i class="fa fa-clipboard mr-1" aria-hidden="true"> <span class="d-none d-md-inline-block ">Copiar presupuesto</i>
                    </button>
+                   <form target="_blank" action="${httpGetQuoter}" method="GET">
+                   ${formItemsTemplate}
+                   
+                   <button id="btn_pdf_budget" type="submit" class="btn btn-danger h-100 ml-2" >
+                       <i class="fa fa-file-pdf"></i> <span class="d-none d-md-inline-block ">Descargar PDF</span>
+                   </button>
+               </form>
                </div>
             </div>
         </div>
-        <form target="_blank" action="${httpGetQuoter}" method="GET">
-            ${formItemsTemplate}
-            
-            <button id="btn_pdf_budget" type="submit" class="swal2-deny swal2-styled mt-3" aria-label="" style="display: inline-block;">
-                <i class="fa fa-file-pdf mx-2"></i> Descargar PDF
-            </button>
-        </form>    
+    
     </div>`;
+    return budgetHtml;
+}
 
+function budgetSweetAlert(total, data, url_form = null) {
     let swallParams = {
-        html: budgetHtml,
+        html: templateBudget(data, total),
         width: "800px",
     };
 
