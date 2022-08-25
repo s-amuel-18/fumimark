@@ -34,6 +34,9 @@
 
         window.addEventListener("load", e => {
             preloader_site.classList.add("d-none");
+            setTimeout(() => {
+                $("#modal_ads").modal("show");
+            }, 1000);
         })
     </script>
 @endpush
