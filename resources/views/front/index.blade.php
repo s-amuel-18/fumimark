@@ -1,6 +1,9 @@
 @extends('front.layouts.app')
 
 @section('content')
+    {{-- loader --}}
+    @include('front.components.loader')
+
     <div class="header-top-section">
         <div class="container">
             <div class="row">
