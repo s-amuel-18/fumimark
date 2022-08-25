@@ -33,10 +33,12 @@
                         <li class="nav-item"> <a class="nav-link" href="#contact">Contactanos</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="{{ route('login') }} ">Inicio de sesión</a> </li>
                     </ul>
-                    <form class="form-inline ml-3 my-lg-0">
-                        <a href="#quoter" class="btn btn-danger font-weight-bold dd2" href="#contact">Solicita una
-                            cotizacion</a>
-                    </form>
+                    @if ($data['services']->count() > 0)
+                        <form class="form-inline ml-3 my-lg-0">
+                            <a href="#quoter" class="btn btn-danger font-weight-bold dd2" href="#contact">Solicita una
+                                cotizacion</a>
+                        </form>
+                    @endif
                 </div>
             </div>
         </nav>
@@ -301,23 +303,26 @@
     </div>
 
     <!--------------service badget------------------>
-    <div class="bg-wrapper-2 py-5" id="quoter">
-        <div class="container ">
-            <div class="row pt-4 justify-content-center">
-                <div class="col-7 text-center">
-                    <div class="section-title section-title-2 wow animate__fadeInUp" data-wow-duration="2s">
-                        <h2>Cotización en tiempo real</h2>
-                        <h3>¡Solicita una cotizacion del servicio!</h3>
-                        <span class="divider divider-line"></span>
+    @if ($data['services']->count() > 0)
+        <div class="bg-wrapper-2 py-5" id="quoter">
+            <div class="container ">
+                <div class="row pt-4 justify-content-center">
+                    <div class="col-7 text-center">
+                        <div class="section-title section-title-2 wow animate__fadeInUp" data-wow-duration="2s">
+                            <h2>Cotización en tiempo real</h2>
+                            <h3>¡Solicita una cotizacion del servicio!</h3>
+                            <span class="divider divider-line"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="wow animate__fadeInUp" data-wow-duration="2s">
-                @include('front.components.form_quoter')
-            </div>
+                <div class="wow animate__fadeInUp" data-wow-duration="2s">
+                    @include('front.components.form_quoter')
+                </div>
 
+            </div>
         </div>
-    </div>
+    @endif
+
 
     <!--------------service section ends here------------------>
 
@@ -386,15 +391,15 @@
     <div class="bg-counter py-5 ">
         <div class="container py-5">
             <div id="counter" class="row">
-                <div class="col-6 col-lg-4 pb-3 text-center">
+                <div class="col-12 col-lg-4 pb-3 text-center">
                     <div class="counter-value" data-count="2">1</div>
                     <h5 class="font-weight-normal text-black-50">Años de experiencia</h5>
                 </div>
-                <div class="col-6 col-lg-4 pb-3 text-center">
+                <div class="col-12 col-lg-4 pb-3 text-center">
                     <div class="counter-value" data-count="10">110</div>
                     <h5 class="font-weight-normal text-black-50">Clientes felices</h5>
                 </div>
-                <div class="col-6  col-lg-4 pb-3 text-center">
+                <div class="col-12  col-lg-4 pb-3 text-center">
                     <div class="counter-value" data-count="1569"></div>
                     <h5 class="font-weight-normal text-black-50">Plagas eliminadas</h5>
                 </div>
@@ -430,8 +435,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="info-box d-flex align-items-center">
-                        <div class="icon-box"> <i class="lni-phone-handset"></i> </div>
+                    <div class="info-box d-flex align-items-center justify-content-start">
+                        <div class="icon-box "> <i class="lni-phone-handset"></i> </div>
                         <div class="info-text">
                             <h6>Llamanos ahora!</h6>
                             <h4><a class=" text-white " target="_blank" href="https://walink.co/7553a3">+58 (414)
@@ -441,7 +446,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="info-box d-flex align-items-center">
+                    <div class="info-box d-flex align-items-center justify-content-start">
                         <div class="icon-box"> <i class="lni-alarm-clock"></i> </div>
                         <div class="info-text">
                             <h6>Nuestro horario es:</h6>
@@ -450,7 +455,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="info-box d-flex align-items-center">
+                    <div class="info-box d-flex align-items-center justify-content-start">
                         <div class="icon-box"> <i class="lni-envelope"></i> </div>
                         <div class="info-text">
                             <h6>¿Necesita ayuda? Envíanos un correo electrónico</h6>
@@ -538,7 +543,7 @@
 
 @push('js')
     <script>
-        // $("#modal_ads").modal("show");
+        $("#modal_ads").modal("show");
         const appData = @json($data['js']);
         const services = document.getElementById("services");
         const meters = document.getElementById("meters");

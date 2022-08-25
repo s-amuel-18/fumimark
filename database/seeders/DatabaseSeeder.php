@@ -28,19 +28,19 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(RoleSeeder::class);
-        \App\Models\User::factory(9)->create();
+        // \App\Models\User::factory(9)->create();
         $this->call(UserSeeder::class);
         $this->call(BillingTimeSeeder::class);
-        $this->call(CategoryServiceSeeder::class);
-        Income::factory(7)->create();
-        Spents::factory(4)->create();
-        BodyEmail::factory(10)->create();
-        Contact_email::factory(1000)->create();
-        Category::factory(10)->create();
-        Requirements::factory(50)->create();
+        // $this->call(CategoryServiceSeeder::class);
+        // Income::factory(7)->create();
+        // Spents::factory(4)->create();
+        // BodyEmail::factory(10)->create();
+        // Contact_email::factory(1000)->create();
+        // Category::factory(10)->create();
+        // Requirements::factory(50)->create();
         // $this->call(EnvioEmailSeeder::class);
         // CategoryService::factory(5)->create();
-        Service::factory(10)->create();
+        // Service::factory(10)->create();
         // Factory::factoryForModel("App\Models\Body_email");
 
         // for ($i = 0; $i < 1000; $i++) {
@@ -50,3 +50,8 @@ class DatabaseSeeder extends Seeder
         // }
     }
 }
+
+
+// avimarks_fumimark
+// avimarks_fumi
+// 4e#4*?{,.8X1
