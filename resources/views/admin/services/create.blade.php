@@ -71,31 +71,31 @@
                                 </div>
                             </div>
 
-                            {{-- Categoria --}}
-
-
+                            {{-- metros cuadrados --}}
                             <div class="col-md-3">
-                                <div class="form-group">
-                                    <select class="form-control select2 form-control-sm " name="category_id"
-                                        id="category_id">
-                                        <option>Seleccionar categoria</option>
-                                        @foreach ($data['categories'] as $category)
-                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                        @endforeach
-                                    </select>
+                                <div class="input-group mb-3 ">
+                                    <input type="number" name="meter"
+                                        class="form-control form-control-sm  @error('meter') is-invalid @enderror"
+                                        value="{{ old('meter') }}" placeholder="Metros cuadrados" autofocus>
 
-                                    @error('category_id')
-                                        <span class="text-danger">
-                                            <small>
-                                                <strong>{{ $message }}</strong>
-                                            </small>
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-ruler-combined"></i>
+                                        </div>
+                                    </div>
+
+                                    @error('meter')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
                                 </div>
                             </div>
 
+
+
                             <div class="col-md-3">
-                                <button class="btn bg-red btn-sm" type="submit">
+                                <button class="btn bg-purple btn-sm" type="submit">
                                     <i class="fas fa-plus-square"></i> Crear Nuevo Servicio
                                 </button>
                             </div>

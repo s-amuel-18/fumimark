@@ -57,14 +57,17 @@ class ServiceController extends Controller
         $data = request()->validate([
             "name" => "required|max:255|string",
             "price" => "required|numeric|max:1000000",
-
+            "meter" => "required|numeric|max:1000000"
         ]);
 
-        $service = auth()->user()->services()->create([
+        $dataInsert = [
             "name" => $data["name"],
             "price" => $data["price"],
             "category_id" => $data["category_id"] ?? 0,
-        ]);
+            "meter" => floatval($data["meter"]),
+        ];
+
+        $service = auth()->user()->services()->create($dataInsert);
 
 
         $message = [
@@ -154,7 +157,7 @@ class ServiceController extends Controller
         $data = request()->validate([
             "name" => "required|max:255|string",
             "price" => "required|numeric|max:1000000",
-
+            "meter" => "required|numeric|max:1000000"
         ]);
 
         $service = Service::findOrFail($service_id);
@@ -162,7 +165,7 @@ class ServiceController extends Controller
         $service->update([
             "name" => $data["name"],
             "price" => $data["price"],
-            "category_id" => $data["category_id"] ?? 0,
+            "meter" => $data["meter"] ?? 0,
         ]);
 
         $message = [
@@ -173,6 +176,7 @@ class ServiceController extends Controller
 
         return redirect()->route("service.index")->with("message", $message);
     }
+
 
     /**
      * Remove the specified resource from storage.
