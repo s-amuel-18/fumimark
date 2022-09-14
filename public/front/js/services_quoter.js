@@ -5,6 +5,8 @@ $(document).ready(async function () {
 
     new ClipboardJS("#budget_copy");
 
+    if (!form_budget) return null;
+
     form_budget.addEventListener("submit", async function (e) {
         e.preventDefault();
 
