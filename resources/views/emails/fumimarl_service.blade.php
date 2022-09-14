@@ -606,20 +606,23 @@
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr style="text-align: center;">
                                 <td>
-                                    <div class="|"><a href="{{ route('home') }}">
+                                    <div class="|" style="padding-top: 30px">
+                                        <a href="{{ route('home') }}">
                                             <img style="width: 240px;"
                                                 src="https://www.negociaecuador.com/brandon-prueba/fumimark_logo.png"
                                                 alt="fumimark logo">
-                                        </a></div>
+                                        </a>
+                                    </div>
                                 </td>
                             </tr>
-                            <tr><img src="https://www.negociaecuador.com/brandon-prueba/icons8-facebook-100.png"
+                            {{-- <tr>
+                                <img src="https://www.negociaecuador.com/brandon-prueba/icons8-facebook-100.png"
                                     alt="facebook">
                                 <img src="https://www.negociaecuador.com/brandon-prueba/icons8-instagram-100.png"
                                     alt="instagram">
                                 <img src="https://www.negociaecuador.com/brandon-prueba/icons8-twitter-circled-100.png"
                                     alt="twitter">
-                            </tr>
+                            </tr> --}}
 
                             <tr>
 
@@ -627,7 +630,7 @@
                                     style="padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #333333;">
 
                                     <br><span class="unstyle-auto-detected-links">Caracas, Venezuela<br>+58
-                                        (414)317-03-73</span><br>
+                                        424-1595718</span><br>
                                     <span>Todos los derecho reservados. <a
                                             href="{{ route('home') }}">Fumimark</a></span>
                                     <br><br>

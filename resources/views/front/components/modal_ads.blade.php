@@ -14,7 +14,7 @@
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body p-0 position-relative">
-                <a target="_blanck" href="https://walink.co/7553a3">
+                <a target="_blanck" href="https://api.whatsapp.com/send?phone=584241595718">
                     <img src="{{ asset('front/img/img-ads-1.png') }}" class="w-100 img-fluid" alt="">
                 </a>
             </div>

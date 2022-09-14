@@ -3,6 +3,7 @@ $(function () {
 
     form_send_emails.addEventListener("submit", async (e) => {
         e.preventDefault();
+
         let validForm =
             Object.keys($(form_send_emails).validate().invalid).length > 0
                 ? true

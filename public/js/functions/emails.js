@@ -88,10 +88,15 @@ async function send_emails(url = null, params, submiter = null) {
         }
     } catch (err) {
         console.log(err);
-        if (insert_text_error) {
-            // let message_error = err.response.data.message;
-            // insert_text_error.textContent = message_error;
-        }
-        // console.log(JSON.stringify(err));
+        const message = err.response.data.message.message;
+        const type = err.response.data.message.type;
+        const title = err.response.data.message.title;
+        hide_loader_sende();
+
+        Swal.fire(
+            title || "Error",
+            message || "Ha ocurrido un error",
+            type || "error"
+        );
     }
 }

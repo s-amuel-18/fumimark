@@ -20,7 +20,7 @@ class serviceFactory extends Factory
             "category_id" => CategoryService::all()->random()->id,
             "name" => $this->faker->name(),
             "price" => rand(100, 400),
-            "meter" => rand(100, 400),
+            "meter" => 100,
         ];
     }
 }

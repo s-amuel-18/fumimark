@@ -36,7 +36,9 @@
                         <li class="nav-item"> <a class="nav-link" href="#contact">Contactanos</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="{{ route('login') }} ">Inicio de sesión</a> </li>
                     </ul>
-                    @if ($data['services']->count() > 0)
+
+                    {{-- * En este momento no necesitamos el cotizadoe --}}
+                    @if (/* $data['services']->count() > 0 */ null)
                         <form class="form-inline ml-3 my-lg-0">
                             <a href="#quoter" class="btn btn-danger font-weight-bold dd2" href="#contact">Solicita una
                                 cotizacion</a>
@@ -306,7 +308,8 @@
     </div>
 
     <!--------------service badget------------------>
-    @if ($data['services']->count() > 0)
+    @if (/* $data['services']->count() > 0 */ null)
+        {{-- * En este momento no necesitamos el cotizadoe --}}
         <div class="bg-wrapper-2 py-5" id="quoter">
             <div class="container ">
                 <div class="row pt-4 justify-content-center">
@@ -426,7 +429,8 @@
                         <h2 class="text-white font-weight-bold">NO DUDE EN CONTACTARNOS EN CUALQUIER MOMENTO. </h2>
                     </div>
                 </div>
-                <div class="col-md-3 align-items-center d-flex"> <a target="_blank" href="https://walink.co/7553a3"
+                <div class="col-md-3 align-items-center d-flex"> <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=584241595718"
                         class="btn btn-outline-light w-100 text-uppercase font-weight-bold dd2">Contactanos &nbsp; <i
                             class="lni-arrow-right"></i></a> </div>
             </div>
@@ -442,8 +446,8 @@
                         <div class="icon-box "> <i class="lni-phone-handset"></i> </div>
                         <div class="info-text">
                             <h6>Llamanos ahora!</h6>
-                            <h4><a class=" text-white " target="_blank" href="https://walink.co/7553a3">+58 (414)
-                                    317-03-73
+                            <h4><a class=" text-white " target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=584241595718">+58 424-1595718
                                 </a> </h4>
                         </div>
                     </div>
@@ -491,7 +495,8 @@
                             <li>Control de plagas residencial</li>
                             <li>Control comercial de plagas</li>
                             <li>Prevención de plagas</li>
-                            <li><a target="_blank" href="https://walink.co/7553a3">Contáctenos</a></li>
+                            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=584241595718">Contáctenos</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -501,7 +506,8 @@
                             <h4>Contactanos</h4>
                             <div style="width:45px; border-bottom:2px solid #fb443c"></div>
                             <ul>
-                                <li> <a target="_blank" href="https://walink.co/7553a3"> Whatsapp: +58 (414) 317-03-73
+                                <li> <a target="_blank" href="https://api.whatsapp.com/send?phone=584241595718"> Whatsapp:
+                                        +58 424-1595718
                                     </a> </li>
                                 <li> Esq. Gradillas a San Jacinto, Av Este 2, Caracas 1012, Distrito Capital </li>
                                 <li><a target="_blank" href="mailto:Fumimarkca@gmail.com">Email: fumimarkca@gmail.com</a>
@@ -529,7 +535,7 @@
     <div class="container">
         <div class="row py-3">
             <div class="col-md-4 text-center text-md-left py-1 small dd"> <a href="#">Política de privacidad</a> -
-                <a target="_blank" href="https://walink.co/7553a3">Contactanos </a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=584241595718">Contactanos </a>
             </div>
             <div class="col-md-8 text-center text-md-right py-1 small dd"> © Fumimark. Todos los derechos
                 Reservado. <a target="#" href="">Fumimark.com</a> </div>

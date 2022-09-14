@@ -15,8 +15,8 @@
         }
 
         /* .tc-white {
-                                color: white;
-                            } */
+                                    color: white;
+                                } */
 
         .bg-green-rgba {
             background-color: rgb(36 182 108 / 70%);
@@ -46,7 +46,7 @@
 @endpush
 
 <div class="bg-green-rgba br-50 bottom-right p-fixed">
-    <a target="_blanck" href="https://walink.co/7553a3" class="buttom-whatsap d-flex">
+    <a target="_blanck" href="https://api.whatsapp.com/send?phone=584241595718" class="buttom-whatsap d-flex">
         <i class="fab fa-whatsapp tc-white" style="font-size: 25px"></i>
     </a>
 </div>

@@ -42,7 +42,7 @@
             @endif
         </p>
 
-        @if ($puedo_enviar_emails['bodyEmails']->count() > 0)
+        @if ($puedo_enviar_emails['bodyEmails']->count() > 0 and $puedo_enviar_emails['count_emails_register'] > 0)
             <form action="" id="form_send_emails">
                 <div class="text-danger mb-3" id="insert_text_error">
 
@@ -86,11 +86,16 @@
                 </div>
 
             </form>
-        @elseif($puedo_enviar_emails['count_emails_register'] > 0)
+        @elseif($puedo_enviar_emails['count_emails_register'] < 1)
+            <div class="text-danger">
+                <h5 class="h6">No tienes emails registrados <a href="{{ route('contact_email.create') }}">Crea
+                        nuevo email</a>
+                </h5>
+            </div>
         @else
             <div class="text-danger">
-                <h5 class="h6">No tienes emails registrados <a href="{{ route('contact_email.store') }}">Crea
-                        nuevo email</a>
+                <h5 class="h6">No tienes cuerpos de email registrados <a href="{{ route('bodyEmail.create') }}">crear
+                        plantilla de mensaje</a></a>
                 </h5>
             </div>
         @endif

@@ -106,7 +106,7 @@ class EmailSendController extends Controller
             }
 
 
-            $correo = new ServicioMaillable($info);
+            $correo = new ContactMaillable($info);
             Mail::to($email)->send($correo);
 
             $emailsToSend = auth()->user()->correos_por_enviar_hoy();
@@ -142,7 +142,10 @@ class EmailSendController extends Controller
 
     public function email()
     {
-        return view("emails.servicio");
+        $data['body']  = "dsadsa dsadas sdasa";
+
+        // return view("emails.fumimarl_service");
+        return view("emails.contact", compact("data"));
     }
 
     public function envioEmail(Request $request)
@@ -200,12 +203,26 @@ class EmailSendController extends Controller
             ->orderBy("created_at", "DESC")
             ->first();
 
+        if (!$emailsNotSend) {
+
+            $json_data = [
+                "success_email_send" => false,
+                "message" => [
+                    "title" => "Emails enviados",
+                    "type" => "success",
+                    "message" => "Todos los emails fueron enviados, no tienes emails para enviar."
+                ]
+            ];
+
+            return response()->json($json_data, 500);
+        }
+
         $info["subject"] =  $data["subject"];
         $info["body"] =  BodyEmail::find($data["body_email"])->body;
 
         try {
-            $correo = new ServicioMaillable($info);
-            Mail::to($emailsNotSend->email)->send($correo);
+            $correo = new ContactMaillable($info);
+            Mail::to(trim($emailsNotSend->email))->send($correo);
 
             $emailsToSend = auth()->user()->correos_por_enviar_hoy();
             $emailsToSend = $emailsToSend == 0 ? null : $emailsToSend;
@@ -233,11 +250,11 @@ class EmailSendController extends Controller
         } catch (\Throwable $th) {
             $send_today = auth()->user()->emailsSent24HoursAgo();
 
-            //throw $th;
             return [
                 "success_email_send" => false,
                 "emails_to_send" => $emailsToSend,
                 "emails_sent_today" => $send_today,
+                "email_err" => $emailsNotSend,
                 "message" => [
                     "type" => "danger",
                     "message" => "Ha ocurrido un error. correos diarios"

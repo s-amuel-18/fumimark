@@ -349,7 +349,7 @@
                                 <img class="sq-80" src="{{ public_path('images\pdf_assets\ws.png') }}" alt="">
                                 <br> <br>
                                 {{-- <h1 class="h-1 h-1-2">+58 (xxxx) xxx-xx-xx</h1> --}}
-                                <h1 class="h-1 h-1-2 ">+58 (414) 317-03-73</h1>
+                                <h1 class="h-1 h-1-2 ">+58 424-1595718</h1>
 
                             </td>
 

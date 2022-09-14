@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-    xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
     <meta charset="utf-8"> <!-- utf-8 works for most cases -->
@@ -219,8 +218,7 @@
  3. mso conditional: For Windows 10 Mail
 -->
 
-<body width="100%"
-    style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #fff4ec;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #fff4ec;">
     <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #fff4ec;">
         <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f9423e;">
@@ -240,8 +238,7 @@
 
         <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
         <!-- Preview Text Spacing Hack : BEGIN -->
-        <div
-            style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
             &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
         </div>
         <!-- Preview Text Spacing Hack : END -->
@@ -260,8 +257,7 @@
             <![endif]-->
 
             <!-- Email Body : BEGIN -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-                style="margin: auto;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
                 <!-- Email Header : BEGIN -->
                 <!-- <tr>
                     <td style="padding: 20px 0; text-align: center">
@@ -275,10 +271,7 @@
                 <tr>
                     <td style="background-color: #ffffff;">
                         <a href="{{ route('home') }}">
-                            <img src="https://www.negociaecuador.com/brandon-prueba/head-mail.png" width="680"
-                                height="" alt="Fumimark_header" border="0"
-                                style="width: 100%; max-width: 680px; height: auto; background: #fff4ec; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"
-                                class="g-img">
+                            <img src="https://www.negociaecuador.com/brandon-prueba/head-mail.png" width="680" height="" alt="Fumimark_header" border="0" style="width: 100%; max-width: 680px; height: auto; background: #fff4ec; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
                         </a>
                     </td>
                 </tr>
@@ -289,10 +282,8 @@
                     <td style="background-color: #ffffff;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td
-                                    style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <h1
-                                        style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">
+                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                    <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">
                                         Control de plagas</h1>
                                     <p style="margin: 0 0 10px;">Tras años de experiencia, y después de abarcar
                                         diferentes ámbitos del sector de las plagas, tales como empresas, hostelería,
@@ -315,13 +306,10 @@
                             <tr>
                                 <td style="padding: 0 20px 20px;">
                                     <!-- Button : BEGIN -->
-                                    <table align="center" role="presentation" cellspacing="0" cellpadding="0"
-                                        border="0" style="margin: auto;">
+                                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                                         <tr>
-                                            <td class="button-td button-td-primary"
-                                                style="border-radius: 4px; background: #f9423e;">
-                                                <a class="button-a button-a-primary" href="{{ route('home') }}"
-                                                    style="background: #f9423e; border: 1px solid #f9423e; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Contactanos
+                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #f9423e;">
+                                                <a class="button-a button-a-primary" href="{{ route('home') }}" style="background: #f9423e; border: 1px solid #f9423e; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Contactanos
                                                     ya! </a>
                                             </td>
                                         </tr>
@@ -338,8 +326,7 @@
                 <!-- Background Image with Text : BEGIN -->
                 <tr>
                     <!-- Bulletproof Background Images c/o https://backgrounds.cm -->
-                    <td
-                        style="text-align: center; background-image: url('https://www.negociaecuador.com/brandon-prueba/fumigador.jpg'); background-position: center center !important; background-size: cover !important;">
+                    <td style="text-align: center; background-image: url('https://www.negociaecuador.com/brandon-prueba/fumigador.jpg'); background-position: center center !important; background-size: cover !important;">
                         <!--[if gte mso 9]>
                         <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; display: inline-block; width: 680px; height: 180px;" src="https://via.placeholder.com/680x180/222222/666666" />
                         <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 680px; height: 180px;">
@@ -351,11 +338,9 @@
                             <tr>
                             <td width="500">
                             <![endif]-->
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0"
-                                width="100%" style="max-width:500px; margin: auto;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:500px; margin: auto;">
                                 <tr style="">
-                                    <td
-                                        style="text-align: center; padding: 40px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;  ;">
+                                    <td style="text-align: center; padding: 40px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;  ;">
                                         <p style="margin: 0;"> <br> Sea cual sea el servicio que contrate, en Fumimark
                                             estamos
                                             comprometidos con nuestros clientes tanto en
@@ -396,9 +381,7 @@
                             <tr>
                             <td width="500">
                             <![endif]-->
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0"
-                                width="100%"
-                                style="max-width:500px; margin: auto; text-align: center; font-family: sans-serif;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:500px; margin: auto; text-align: center; font-family: sans-serif;">
                                 <tr>
                                     <td>
                                         <h4>SERVICIOS DE CONTROL DE PLAGAS</h4>
@@ -426,26 +409,18 @@
                         <tr>
                         <td valign="top" width="220">
                         <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;"
-                            class="stack-column">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                width="100%">
+                        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td style="padding: 10px;">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                            width="100%" style="font-size: 14px;text-align: left;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
                                             <tr>
                                                 <td>
-                                                    <img src="https://www.negociaecuador.com/brandon-prueba/urban.jpg "
-                                                        width="200" height="" border="0"
-                                                        alt="ciudad urbana"
-                                                        style="width: 100%; max-width: 200px; height: auto; background: #f0dcc4; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
-                                                        class="center-on-narrow">
+                                                    <img src="https://www.negociaecuador.com/brandon-prueba/urban.jpg " width="200" height="" border="0" alt="ciudad urbana" style="width: 100%; max-width: 200px; height: auto; background: #f0dcc4; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;"
-                                                    class="stack-column-center">
+                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
                                                     <h5>Residencias urbanas </h5>
                                                     <p style="margin: 0;">¿Busca una empresa de Control de Plagas para
                                                         su Comunidad?</p>
@@ -460,25 +435,18 @@
                         </td>
                         <td valign="top" width="220">
                         <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;"
-                            class="stack-column">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                width="100%">
+                        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td style="padding: 10px;">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                            width="100%" style="font-size: 14px;text-align: left;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
                                             <tr>
                                                 <td>
-                                                    <img src="https://www.negociaecuador.com/brandon-prueba/oficina.jpg"
-                                                        width="200" height="" border="0" alt="oficina"
-                                                        style="width: 100%; max-width: 200px; height: auto; background: #f0dcc4; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
-                                                        class="center-on-narrow">
+                                                    <img src="https://www.negociaecuador.com/brandon-prueba/oficina.jpg" width="200" height="" border="0" alt="oficina" style="width: 100%; max-width: 200px; height: auto; background: #f0dcc4; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;"
-                                                    class="stack-column-center">
+                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
                                                     <h5>Oficinas y Empresas</h5>
                                                     <p style="margin: 0;">Servicios especiales de Sanidad, Higiene y
                                                         Calidad Ambiental para Oficinas y Empresas.</p>
@@ -493,25 +461,18 @@
                         </td>
                         <td valign="top" width="220">
                         <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;"
-                            class="stack-column">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                width="100%">
+                        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td style="padding: 10px;">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                            width="100%" style="font-size: 14px;text-align: left;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
                                             <tr>
                                                 <td>
-                                                    <img src="https://www.negociaecuador.com/brandon-prueba/kitchen.jpg"
-                                                        width="200" height="" border="0" alt="cocina"
-                                                        style="width: 100%; max-width: 200px; height: auto; background: #f0dcc4; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
-                                                        class="center-on-narrow">
+                                                    <img src="https://www.negociaecuador.com/brandon-prueba/kitchen.jpg" width="200" height="" border="0" alt="cocina" style="width: 100%; max-width: 200px; height: auto; background: #f0dcc4; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;"
-                                                    class="stack-column-center">
+                                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
                                                     <h5>Industria Alimentaria</h5>
                                                     <p style="margin: 0;">¿Tiene problemas con las plagas en su empresa
                                                         alimentaria? Su solución está aquí. No permita que la Plaga
@@ -547,8 +508,7 @@
                     <td style="background-color: #ffffff;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td
-                                    style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
                                     <p style="margin: 0 0 10px 0;  text-align: center;">Somos una compañía
                                         especializada
                                         en hacer
@@ -593,8 +553,7 @@
         </div>
 
         <!-- Full Bleed Background Section : BEGIN -->
-        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-            style="background-color: #f0dcc4;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f0dcc4;">
             <tr>
                 <td>
                     <div align="center" style="max-width: 680px; margin: auto;" class="email-container">
@@ -607,29 +566,21 @@
                             <tr style="text-align: center;">
                                 <td>
                                     <div class="|"><a href="{{ route('home') }}">
-                                            <img style="width: 240px;"
-                                                src="https://www.negociaecuador.com/brandon-prueba/fumimark_logo.png"
-                                                alt="fumimark logo">
+                                            <img style="width: 240px;" src="https://www.negociaecuador.com/brandon-prueba/fumimark_logo.png" alt="fumimark logo">
                                         </a></div>
                                 </td>
                             </tr>
-                            <tr><img src="https://www.negociaecuador.com/brandon-prueba/icons8-facebook-100.png"
-                                    alt="facebook">
-                                <img src="https://www.negociaecuador.com/brandon-prueba/icons8-instagram-100.png"
-                                    alt="instagram">
-                                <img src="https://www.negociaecuador.com/brandon-prueba/icons8-twitter-circled-100.png"
-                                    alt="twitter">
+                            <tr><img src="https://www.negociaecuador.com/brandon-prueba/icons8-facebook-100.png" alt="facebook">
+                                <img src="https://www.negociaecuador.com/brandon-prueba/icons8-instagram-100.png" alt="instagram">
+                                <img src="https://www.negociaecuador.com/brandon-prueba/icons8-twitter-circled-100.png" alt="twitter">
                             </tr>
 
                             <tr>
 
-                                <td
-                                    style="padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #333333;">
+                                <td style="padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #333333;">
 
-                                    <br><span class="unstyle-auto-detected-links">Caracas, Venezuela<br>+58
-                                        (414)317-03-73</span><br>
-                                    <span>Todos los derecho reservados. <a
-                                            href="{{ route('home') }}">Fumimark</a></span>
+                                    <br><span class="unstyle-auto-detected-links">Caracas, Venezuela<br>+58 424-1595718</span><br>
+                                    <span>Todos los derecho reservados. <a href="{{ route('home') }}">Fumimark</a></span>
                                     <br><br>
                                 </td>
 
